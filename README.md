@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Grammable**
 
-Things you may want to cover:
+Red social para compartir fotos, estilo Instagram.
 
-* Ruby version
+## Tecnologías
 
-* System dependencies
+- **Ruby** 2.5.3
+- **Rails** 5.2.3
+- **Base de datos:** PostgreSQL
+- **Frontend:** Bootstrap
+- **Autenticación:** Devise
+- **Subida de imágenes:** CarrierWave + Cloudinary
+- **JavaScript:** jQuery
 
-* Configuration
+## Funcionalidades principales
 
-* Database creation
+- [x] Autenticación de usuarios
+- [x] Subida de fotos con descripción
+- [x] Sistema de likes
+- [x] Sistema de comentarios
+- [x] Feed de publicaciones
+- [x] Perfil de usuario
 
-* Database initialization
+## Instalación local
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+git clone https://github.com/tu-usuario/grammable.git
+cd grammable
+bundle install
+rails db:create db:migrate db:seed
+rails server
